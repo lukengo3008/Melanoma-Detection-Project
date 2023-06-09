@@ -1,5 +1,4 @@
-# Project Name: Melanoma Detection
-> Brief description of your project.
+# Melanoma Detection Project
 > Problem statement: To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 
 **Data Summary:**
@@ -52,21 +51,28 @@ The data set contains the following diseases:
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- General Information:
+The project focuses on developing a CNN-based model for accurate melanoma detection. It aims to address the rising incidence of melanoma, a deadly form of skin cancer, by automating the detection process using deep learning techniques. The project utilizes a dataset of skin images obtained from the International Skin Imaging Collaboration (ISIC) to train and evaluate the model.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Background:
+Melanoma is a significant health concern, accounting for a large portion of skin cancer-related deaths. Early detection plays a vital role in improving patient outcomes. The project leverages the power of deep learning and computer vision to build a model capable of accurately detecting melanoma. By combining advanced algorithms with dermatological expertise, the project aims to enhance the efficiency and accuracy of melanoma diagnosis.
+
+- Business Problem:
+The primary business problem addressed by the project is the labor-intensive and subjective nature of melanoma diagnosis. Traditional diagnosis methods rely on visual inspection by dermatologists, which can be time-consuming and prone to human error. The project aims to automate the detection process, providing a tool that can evaluate skin images and alert dermatologists about the presence of melanoma. By reducing manual effort and facilitating early detection, the project has the potential to save lives and improve patient outcomes.
+
+- Dataset:
+The project utilizes a dataset obtained from the International Skin Imaging Collaboration (ISIC). This dataset consists of 2,357 images representing various oncological diseases, including melanoma, as well as benign and malignant skin conditions. The images are labeled with nine different classes, such as actinic keratosis, basal cell carcinoma, dermatofibroma, melanoma, nevus, pigmented benign keratosis, seborrheic keratosis, squamous cell carcinoma, and vascular lesion. The dataset provides the necessary information for training and evaluating the CNN model for accurate melanoma detection.
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+- We can easily notice that the model is overfitting since overfitting is computed in relation to loss, and there is a change in loss functions between training and testing.
+- Because there are enough features to remember the pattern and the neural network is extremely young (only 20 epochs), learning has only just begun, the accuracy is about 70%.
+- After compiling the model using Adam optimizer, there is no much improvements in accuracy from the initial model. However, it's notiable that the overfitting issue fading away due to data augmentation.
+- The distribution of classes in the training dataset:
+    - Seborrheic keratosis has the least number of samples
+    - Pigmented benign keratosis dominate the data in terms proportionate number of samples
+- Rectify the class imbalance by using Augmentor:
+    - The class rebalancing assisted in lowering data overfitting and therefore the loss. However, it had a negligible effect on accuracy.
+    - e first attempted without the ImageDataGenerator, which resulted in data that was overfit at a high ratio. Then we added dropout and ImageDataGenerator, which minimized overfitting. Finally, we attempted Batch Normalization and Augumentation, which was quite beneficial in terms of carry forward.
 
 ## Technologies Used
 - library - version 1.0
@@ -83,11 +89,4 @@ Give credit here.
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@lukengo3008] - feel free to contact me!
