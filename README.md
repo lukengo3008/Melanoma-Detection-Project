@@ -46,6 +46,7 @@ The data set contains the following diseases:
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
+* [Contact](#contact)
 
 ## General Information
 - General Information:
