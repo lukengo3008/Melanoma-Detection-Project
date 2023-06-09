@@ -72,21 +72,16 @@ The project utilizes a dataset obtained from the International Skin Imaging Coll
     - Pigmented benign keratosis dominate the data in terms proportionate number of samples
 - Rectify the class imbalance by using Augmentor:
     - The class rebalancing assisted in lowering data overfitting and therefore the loss. However, it had a negligible effect on accuracy.
-    - e first attempted without the ImageDataGenerator, which resulted in data that was overfit at a high ratio. Then we added dropout and ImageDataGenerator, which minimized overfitting. Finally, we attempted Batch Normalization and Augumentation, which was quite beneficial in terms of carry forward.
+    - We first attempted without the ImageDataGenerator, which resulted in data that was overfit at a high ratio. Then we added dropout and ImageDataGenerator, which minimized overfitting. Finally, we attempted Batch Normalization and Augumentation, which was quite beneficial in terms of carry forward.
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+- TensorFlow 2.6.0.
+- Matplotlib 3.4.3.
+- NumPy 1.21.2.
+- Pandas 1.3.3.
+- Pillow 8.3.2.
+- Keras 2.6.0.
+- Augmentor 0.2.8.
 
 ## Contact
 Created by [@lukengo3008] - feel free to contact me!
