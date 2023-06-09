@@ -1,2 +1,2 @@
 # CNN
-a CNN based model which can accurately detect melanoma.
+A CNN based model which can accurately detect melanoma.
