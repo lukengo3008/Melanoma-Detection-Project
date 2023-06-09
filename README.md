@@ -72,7 +72,7 @@ The project utilizes a dataset obtained from the International Skin Imaging Coll
 
 ## Conclusions
 - We can easily notice that the model is overfitting since overfitting is computed in relation to loss, and there is a change in loss functions between training and testing.
-- Because there are enough features to remember the pattern and the neural network is extremely young (only 20 epochs), learning has only just begun, the accuracy is about 70%.
+- Because there are enough features to remember the pattern and the neural network is extremely young (only 20 epochs), learning has only just begun.
 - After compiling the model using Adam optimizer, there is no much improvements in accuracy from the initial model. However, it's notiable that the overfitting issue fading away due to data augmentation.
 - The distribution of classes in the training dataset:
     - Seborrheic keratosis has the least number of samples
