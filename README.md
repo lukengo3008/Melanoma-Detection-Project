@@ -60,6 +60,15 @@ The primary business problem addressed by the project is the labor-intensive and
 - Dataset:
 The project utilizes a dataset obtained from the International Skin Imaging Collaboration (ISIC). This dataset consists of 2,357 images representing various oncological diseases, including melanoma, as well as benign and malignant skin conditions. The images are labeled with nine different classes, such as actinic keratosis, basal cell carcinoma, dermatofibroma, melanoma, nevus, pigmented benign keratosis, seborrheic keratosis, squamous cell carcinoma, and vascular lesion. The dataset provides the necessary information for training and evaluating the CNN model for accurate melanoma detection.
 
+## Technologies Used
+- TensorFlow 2.6.0.
+- Matplotlib 3.4.3.
+- NumPy 1.21.2.
+- Pandas 1.3.3.
+- Pillow 8.3.2.
+- Keras 2.6.0.
+- Augmentor 0.2.8.
+
 ## Conclusions
 - We can easily notice that the model is overfitting since overfitting is computed in relation to loss, and there is a change in loss functions between training and testing.
 - Because there are enough features to remember the pattern and the neural network is extremely young (only 20 epochs), learning has only just begun, the accuracy is about 70%.
@@ -70,15 +79,6 @@ The project utilizes a dataset obtained from the International Skin Imaging Coll
 - Rectify the class imbalance by using Augmentor:
     - The class rebalancing assisted in lowering data overfitting and therefore the loss. However, it had a negligible effect on accuracy.
     - We first attempted without the ImageDataGenerator, which resulted in data that was overfit at a high ratio. Then we added dropout and ImageDataGenerator, which minimized overfitting. Finally, we attempted Batch Normalization and Augumentation, which was quite beneficial in terms of carry forward.
-
-## Technologies Used
-- TensorFlow 2.6.0.
-- Matplotlib 3.4.3.
-- NumPy 1.21.2.
-- Pandas 1.3.3.
-- Pillow 8.3.2.
-- Keras 2.6.0.
-- Augmentor 0.2.8.
 
 ## Contact
 Created by [@lukengo3008] - feel free to contact me!
